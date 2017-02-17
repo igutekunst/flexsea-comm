@@ -165,12 +165,7 @@ extern void (*flexsea_payload_ptr[MAX_CMD_CODE][RX_PTYPE_MAX_INDEX+1]) \
  */
 typedef struct
 {
-	/**
-	 * Source port of the packet
-	 */
 
-	Port port;
-	Port reply_port;
 	/**
 	 * Raw bytes as received on the wire
 	 */
@@ -180,6 +175,12 @@ typedef struct
 	 * Unpacked packet ready to be parsed.
 	 */
 	uint8_t unpaked[100];
+	/**
+	 * Source port of the packet
+	 */
+
+	Port port;
+	Port reply_port;
 } PacketWrapper;
 
 
