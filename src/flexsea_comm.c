@@ -112,7 +112,7 @@ MsgQueue usb_reply_queue;
 // Private Function Prototype(s):
 //****************************************************************************
 
-int8_t unpack_payload(uint8_t *buf, uint8_t rx_cmd[PACKAGED_PAYLOAD_LEN]);
+
 
 //****************************************************************************
 // Public Function(s)
